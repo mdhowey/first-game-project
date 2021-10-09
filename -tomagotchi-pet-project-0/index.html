@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- <script src="https://kit.fontawesome.com/b9f74e10bb.js" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>Project 0</title>
+</head>
+<body>
+    
+    <div class="egg-carton">
+
+        <div class="egg">
+
+            <div class="screen">
+                
+                <div class="screen-titles">
+                    <span class="header-titles">health</span>
+                    <span class="header-titles">sleep</span>
+                    <span class="header-titles">boredom</span>
+                    <span class="header-titles">sick</span>
+                </div>
+
+                <div class="screen-header">
+                
+                    <span id="hunger" class="icon">
+                        <!-- hunger (1-10 scale; feed) -->
+
+                    </span>
+                    <span id="sleepiness" class="icon">
+                        <!-- sleepiness (1-10 scale; light -- > off/on boolean) -->
+                    </span>
+                    <span id="boredom" class="icon">
+                        <!-- boredom (1-10 scale; play) -->
+                    </span>
+                    <span id="sickness" class="icon">
+                        <!-- sickness (boolean; medicine) -->
+                        <!-- <i class="fas fa-skull-crossbones fa"></i> -->
+                        <i class="fas fa-medkit fa"></i>
+                    </span>
+
+                </div>
+        
+                <div class="char-screen">
+        
+                    <div id="char-container">
+                        <p id="age"></p>
+                        <span id="penguin-box">
+                            <i id="linux-penguin" class="fab fa-linux fa-1x"></i>
+                        </span>
+                    </div>
+        
+                </div>
+                
+                <div class="screen-titles">
+                    <!-- <span class="footer-titles">poop</span> -->
+                    <span class="footer-titles">poop</span>
+                    <span class="footer-titles">wellbeing</span>
+                    <span class="footer-titles">misbehave</span>
+                    <span class="footer-titles">chipi</span>
+                </div>
+
+                <div class="screen-footer">
+
+                    <span id="cleanliness" class="icon"> 
+                        <!-- cleanliness (boolean; poop < -- clean it up! boolean) -->
+                        <i class="fas fa-hand-sparkles fa"></i>
+                        <!-- <i class="fas fa-poo fa"></i> -->
+                    </span>
+                    <span id="wellbeing" class="icon">
+                        <!-- wellbeing (1-10 scale; average of hunger, sleepiness, boredom) -->
+                    </span>
+                    <span id="misbehaving" class="icon">
+                        <!-- misbehaving (boolean; scold) -->
+                        <i class="far fa-smile-beam fa"></i>
+                        <!-- <i class="far fa-tired fa"></i> -->
+                    </span>
+                    <span id="chipi" class="icon">
+                        <!-- 'chipi' (boolean; needs attention) -->
+                        <i class="far fa-smile-beam fa"></i>
+                        <!-- <i class="far fa-sad-cry"></i> -->
+                    </span>
+
+                </div>
+            
+            </div>
+        
+            <div>
+                <button class="yellow">A</button>
+                <button class="yellow">B</button>
+                <button class="yellow">C</button>
+            </div>
+
+        </div>
+
+        <div class="egg-dialogue">
+
+            <p id="dialogue">
+                You need to care for this penguin. 
+                Be sure to feed, clean, love and play 
+                with this lovely little monster. In the
+                event you can't, it will die... Death 
+                occurs when the creature's hunger, 
+                sleepiness or boredom hit 10. Also, if 
+                the wellbeing metrics drops to 0, death 
+                will ensure. In addition, being sick,
+                living in its own filth, misbehaving, or
+                needing attention drop the measurements
+                even faster... Play around, and have 
+                fun! 
+            </p>
+
+            <form id="penguin-name-form">
+                <!-- <label for="fname">Penguin Name:</label> -->
+                <input type="text" id="penguin-name" maxlength="6" placeholder="Penguin Name">
+                <input type="submit" id="submit-name" class="action-button" value="Submit">
+            </form> 
+
+            <div id="btn-container">
+
+                <button id="feed" class="action-button">feed</button>
+                <button id="put-to-bed" class="action-button">put to bed</button>
+                <button id="play" class="action-button">play</button>
+                <button id="give-medicine" class="action-button">give medicine</button>
+                <button id="clean-up" class="action-button">clean up</button>
+                <button id="cheer-up" class="action-button">cheer up</button>
+                <button id="scold" class="action-button">scold</button>
+                <button id="pay-attention" class="action-button">pay attention</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by brgfx - www.freepik.com</a> -->
+</body>
+</html>
