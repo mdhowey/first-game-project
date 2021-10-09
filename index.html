@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="https://kit.fontawesome.com/b9f74e10bb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>Project 0</title>
+</head>
+<body>
+
+    <div id="egg-carton">
+
+        <div id="egg">
+        
+        <span id="start-wrapper">
+            <input type="text" id="penguin-name" maxlength="6" placeholder="Penguin Name">
+            <button id="btn-start" class="btn-action">START</button>
+        </span> 
+
+            <div id="screen">
+
+                <div class="screen-titles">
+                    <span class="top-icon-title">health:</span>
+                    <span class="top-icon-title">sleep:</span>
+                    <span class="top-icon-title">boredom:</span>
+                    <span class="top-icon-title">wellbeing:</span>
+                </div>
+
+                <div id="screen-header">
+
+                    <span id="hunger" class="icon"></span>
+                    <span id="sleepiness" class="icon"></span>
+                    <span id="boredom" class="icon"></span>
+                    <span id="wellbeing" class="icon"></span>
+
+                </div>
+
+                <div id="main-screen">
+
+                    <div id="penguin-age">
+                        <p id="age"></p>
+                    </div>
+
+                    <div id="penguin-box">
+                        <i id="linux-penguin" class="fab fa-linux fa-1x"></i>
+                    </div>
+
+                </div>
+
+                <div id="screen-footer">
+
+                    <span id="cleanliness" class="icon"><i class="fas fa-hand-sparkles fa"></i></span>
+                    <span id="sickness" class="icon"><i class="fas fa-medkit fa"></i></span>
+                    <span id="misbehaving" class="icon"><i class="far fa-smile-beam fa"></i></span>
+                    <span id="chipi" class="icon"><i class="far fa-smile-beam fa"></i></span>
+
+                </div>
+
+                
+                <div class="screen-titles">
+                    <span class="bottom-icon-title">poop</span>
+                    <span class="bottom-icon-title">sick</span>
+                    <span class="bottom-icon-title">misbehave</span>
+                    <span class="bottom-icon-title">chipi</span>
+                </div>
+                
+            </div>
+            
+            <div>
+                <button class="yellow">A</button>
+                <button class="yellow">B</button>
+                <button class="yellow">C</button>
+            </div>
+
+        </div>
+
+        <div id="instructions-container">
+            
+            <p id="instructions">
+                You need to care for this penguin. Give 
+                your new little friend a name and hit 
+                'START' to take off on a magical, parental
+                adventure. Be sure to feed, love and play 
+                with this cute, little, flightless bird. 
+                In the event you can't or won't, it will 
+                die. Penguins are generally eaten by 
+                killer whales in the wild. It'd be a shame
+                if a penguin lost its life because you were
+                too busy checking Tik Tok. When the 
+                creature's hunger, sleepiness or boredom levels
+                hit 10, or if the wellbeing level drops to 0, 
+                your bird will die. So get to it. Play around, 
+                and have fun with your new pal! 
+            </p>
+        
+        </div>
+
+        <div id="player-controls">
+
+            <button id="feed" class="btn-action">feed</button>
+            <button id="put-to-bed" class="btn-action">put to bed</button>
+            <button id="play" class="btn-action">play</button>
+            <button id="cheer-up" class="btn-action">cheer up</button>
+            <p id="game-reset-instructions"></p>
+            <button id="play-again" class="btn-action">play again</button>
+            <!-- <button id="give-medicine" class="btn-action">give medicine</button>  -->
+            <!-- <button id="clean-up" class="btn-action">clean up</button> -->
+            <!-- <button id="scold" class="btn-action">scold</button> -->
+            <!-- <button id="pay-attention" class="btn-action">pay attention</button> -->
+
+        </div>
+
+    </div>
+
+</body>
+</html>
